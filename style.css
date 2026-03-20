@@ -1,0 +1,207 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    color: #3e4d51;
+    line-height: 1.4;
+}
+
+.container {
+    max-width: 1240px;
+    margin: 0 auto;
+    padding: 0 30px;
+}
+
+/* HEADER */
+.site-header {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: 100;
+    padding: 35px 0;
+}
+
+.header-flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.logo img { height: 95px; }
+
+.header-right {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.search-box {
+    border-bottom: 2px solid #4a5e63;
+    width: 260px;
+    padding-bottom: 5px;
+    margin-bottom: 18px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.search-box input {
+    background: transparent;
+    border: none;
+    outline: none;
+    font-size: 17px;
+    color: #4a5e63;
+    width: 100%;
+}
+
+.main-nav ul {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+}
+
+.main-nav a {
+    text-decoration: none;
+    color: #3e4d51;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+/* BANNER */
+.hero-container { position: relative; width: 100%; }
+.hero-image { width: 100%; height: auto; display: block; }
+.hero-overlay-content {
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    width: 100%;
+}
+.hero-overlay-content h1 {
+    font-family: 'Roboto Slab', serif;
+    font-size: 62px; /* Збільшено заголовок */
+    color: #5b4a3a;
+    font-weight: 400;
+}
+.btn-read-more {
+    display: inline-block;
+    margin-top: 35px;
+    background: #76b54b;
+    color: #fff;
+    padding: 18px 55px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+/* PRODUCT BAR */
+.product-bar { padding: 35px 0; background: #fff; border-bottom: 1px solid #eee; }
+.bar-flex { display: flex; justify-content: space-around; text-align: center; }
+.bar-item img { height: 50px; margin-bottom: 10px; }
+.bar-item p { font-size: 14px; font-weight: bold; color: #666; text-transform: uppercase; }
+
+/* VISION/MISSION */
+.full-width-img { width: 100%; display: block; }
+
+/* ACTIVITIES - ЗБІЛЬШЕННЯ ТА ВИРІВНЮВАННЯ */
+.activities {
+    padding: 100px 0;
+    text-align: center;
+    background: #fdfdfd;
+}
+
+.section-title {
+    font-family: 'Roboto Slab', serif;
+    font-size: 52px; /* Дуже великий заголовок секції */
+    color: #3e4d51;
+}
+
+.dots {
+    color: #76b54b;
+    margin: 15px 0 60px;
+    letter-spacing: 8px;
+    font-size: 26px;
+}
+
+.activity-grid {
+    display: flex;
+    gap: 60px;
+    justify-content: center;
+}
+
+.card {
+    flex: 1;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* Вирівнювання тексту по лівому краю всередині картки */
+}
+
+/* Рівні картинки: фіксуємо висоту і центруємо зображення */
+.activity-img {
+    width: 100%;
+    height: 280px; /* Фіксована висота для всіх фото */
+    object-fit: contain; /* Картинка не розтягується, а вписується */
+    margin-bottom: 30px;
+}
+
+.card h3 {
+    color: #76b54b;
+    font-size: 28px; /* Збільшено шрифт */
+    margin-bottom: 10px;
+    font-family: 'Roboto Slab', serif;
+}
+
+.card-line {
+    width: 60px;
+    height: 2px;
+    background-color: #76b54b;
+    margin-bottom: 20px;
+}
+
+.card p {
+    font-size: 18px; /* Збільшено шрифт опису */
+    color: #555;
+    line-height: 1.6;
+}
+
+/* FOOTER */
+.main-footer {
+    background-color: #313e42;
+    color: #fff;
+    padding: 60px 0 40px;
+}
+
+.footer-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #4a5e63;
+    padding-bottom: 35px;
+    margin-bottom: 30px;
+}
+
+.footer-nav a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 15px;
+    margin-right: 15px;
+}
+
+.socials img {
+    height: 35px;
+    margin-left: 20px;
+    transition: 0.3s;
+}
+
+.socials img:hover { opacity: 0.7; }
+
+.footer-bottom {
+    text-align: center;
+    font-size: 15px;
+    color: #999;
+}
